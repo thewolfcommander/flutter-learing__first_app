@@ -7,7 +7,11 @@ void main() {
         body: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: Colors.accents,
+              colors: [
+                Color.fromARGB(167, 64, 255, 245),
+                Color.fromARGB(167, 64, 214, 255),
+                Color.fromARGB(167, 64, 255, 198),
+              ],
             ),
           ),
           child: const Center(
