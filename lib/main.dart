@@ -7,15 +7,23 @@ void main() {
         body: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
               colors: [
-                Color.fromARGB(167, 64, 255, 245),
-                Color.fromARGB(167, 64, 214, 255),
-                Color.fromARGB(167, 64, 255, 198),
+                Color.fromARGB(194, 255, 64, 150),
+                Color.fromARGB(194, 255, 64, 64),
+                Color.fromARGB(194, 255, 64, 109),
               ],
             ),
           ),
           child: const Center(
-            child: Text('Hello Cool'),
+            child: Text(
+              'Hello Cool',
+              style: TextStyle(
+                color: Color.fromARGB(255, 255, 255, 255),
+                fontSize: 28,
+              ),
+            ),
           ),
         ),
       ),
