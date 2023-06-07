@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'package:first_app/styled_text.dart';
-
 // defining variables
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({
+  const GradientContainer(
+    this.colors, {
     super.key,
-    required this.colors,
   });
 
   final List<Color> colors;
@@ -24,8 +22,11 @@ class GradientContainer extends StatelessWidget {
           colors: colors,
         ),
       ),
-      child: const Center(
-        child: StyledText('Am I right?'),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-images/dice-1.png',
+          width: 200,
+        ),
       ),
     );
   }
